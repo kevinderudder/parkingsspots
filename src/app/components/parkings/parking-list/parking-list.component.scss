@@ -1,0 +1,11 @@
+.c-parkings{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .c-parkings__item{
+        margin: 10px;
+    }
+}

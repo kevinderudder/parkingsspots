@@ -1,0 +1,61 @@
+@import '../../../scss/settings.scss';
+
+.c-parking{
+    position: relative;
+    background: linear-gradient(45deg, darken($default-color,12%), $default-color);
+    color: white;
+
+    width: $parking-square-size;
+    height: $parking-square-size;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    box-shadow: 1px 1px 3px 1px rgba(172, 171, 171, 0.788);
+    
+    .c-parking__remove-icon{
+        border: 2px solid white;
+        display: none;
+        font-size: 14px;
+        font-weight: bold;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        border-radius: 20px;
+        background-color: rgb(214, 32, 32);
+
+        position: absolute;
+        top:-13px;
+        right: -10px;
+
+
+        &:hover{
+            background-color:rgb(95, 19, 19);
+        }
+    }
+
+
+    /*.c-parking  .c-parking__icon*/
+    .c-parking__icon{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 100px;
+    }
+
+    /*.c-parking:hover*/
+    &:hover{
+        background: darken($default-color, 8%);
+        
+        box-shadow: none;
+        cursor: pointer;
+    }
+
+    &:hover .c-parking__remove-icon{
+    display: block;
+    }
+
+}
+

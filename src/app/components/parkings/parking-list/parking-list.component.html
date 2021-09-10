@@ -1,0 +1,12 @@
+<div>
+
+    <input type="text" [(ngModel)]="filter" placeholder="zoek een parking..." />
+    <div class="c-parkings">
+        <div class="c-parkings__item" *ngFor="let p of parkings | parkingFilter:filter">
+            <app-parking-details [parking]="p" (remove)="removeParking($event)"></app-parking-details>
+        </div>
+        
+    </div>
+
+
+</div>
